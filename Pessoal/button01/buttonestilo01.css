@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(135deg, #1D22F0, #1719BD, #2F3070);
+    background-attachment: fixed;
+}
+
+main {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #1f204abd;
+    margin: auto;
+    width: 600px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+h1#principal {
+    /*COR*/
+    background-color: #6668F2;
+    padding: 4px;
+    /*TEXTO*/
+    font: italic bolder 3em 'Times New Roman', Times, serif; 
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(47, 47, 47, 0.522);
+}
+
+div#caixa {
+    padding-left: 220px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+div#caixa > div#button {
+    border: 10px ridge rgb(116, 115, 115);
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: rgba(132, 0, 0, 0.83);
+}
+
+#caixa > #button:hover {
+    background-color: rgba(237, 0, 0, 0.83);
+}
+
+#caixa > #button:active {
+    box-shadow: inset 2px 2px 2px 2px black;
+    background-color: rgb(255, 0, 0);
+}
+
+div#caixa > div#button > p {
+    text-align: center;
+    font: bolder 2em Arial;
+    text-shadow: 2px 2px 2px rgba(96, 0, 0, 0.64);
+}
+
+#caixa > #button:hover > p {
+    text-shadow: 2px 2px 2px rgb(192, 0, 0);
+}
+
+#caixa > #button:active > p {
+    text-shadow: 0px 0px 0px rgb(192, 0, 0);
+}

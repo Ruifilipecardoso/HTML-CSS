@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-Rui.ico" type="image/x-icon">
+    <title>Interessante</title>
+    <style>
+        
+        body {
+            background-color: rgb(135, 255, 135);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1#principal {
+            /*COR*/
+            background-color: rgba(0, 176, 0, 0.552);
+            /*TEXTO*/
+            text-align: center;
+        }
+
+        h1 > spam {
+            color: white;
+        }
+
+        h1 > #exclamacao {
+            display: none;
+        }
+
+        h1:hover > #exclamacao {
+            display: block;
+            color: red;
+        }
+
+        p {
+            /*COR*/
+            /*TEXTO*/
+            font-size: 2em;
+        }
+
+        p > spam {
+            font-weight: bolder;
+        }
+        
+        div.errado {
+            /*COR*/
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            /*TEXTO*/
+            text-align: center;
+            font: bold 2em Arial;
+        }
+
+        div.errado:hover {
+            /*COR*/
+            background-color: red;
+            color: white;
+            /*TEXTO*/
+        }
+
+        div.certo {
+             /*COR*/
+             background-color: lightgray;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            /*TEXTO*/
+            text-align: center;
+            font: bold 2em Arial;
+        }
+
+        div.certo:hover {
+            /*COR*/
+            background-color: green;
+            color: white;
+            /*TEXTO*/
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal">Qual o resultado <spam>CERTO</spam> <spam id="exclamacao">! ! ! ! ! ! ! <br>CUIDADO <br>! ! ! ! ! ! ! </spam></h1>
+    <h1>Fácil</h1>
+    <p>Quanto é <spam>2+2</spam></p>
+    <div class="errado">1</div>
+    <div class="certo">4</div>
+    <div class="errado">6</div>
+    <div class="errado">8</div>
+    <h1 style="color: rgb(184, 184, 27);">Médio</h1>
+    <p>Quanto é 2<sup>2</sup></p>
+    <div class="errado">6</div>
+    <div class="errado">0</div>
+    <div class="certo">4</div>
+    <div class="errado">10</div>
+    <h1 style="color: rgb(184, 108, 27);">Médio-Difícel</h1>
+    <p>Quanto é 5<sup>3</sup>/2</p>
+    <div class="certo">62,5</div>
+    <div class="errado">125</div>
+    <div class="errado">44,5</div>
+    <div class="errado">5</div>
+    <div class="errado">75</div>
+    <h1 style="color: rgb(184, 27, 27);">Difícel</h1>
+    <p>Quanto é ((9<sup>4</sup>x(5/2))+(500/300))/3</p>
+    <div class="errado">6561</div>
+    <div class="errado">16402,5</div>
+    <div class="certo">5468,06</div>
+    <div class="errado">3674,89</div>
+    <div class="errado">7832</div>
+    <div class="errado">1</div>
+</body>
+</html>
