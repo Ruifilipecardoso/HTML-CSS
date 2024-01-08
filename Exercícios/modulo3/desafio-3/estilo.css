@@ -2,9 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
 :root {
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-poema: 'Sriracha', serif;
+    --fonte-poema: 'Sriracha', cursive ;
+    --fonte-titulo: 'Passion One', sans-serif;
 }
 
 * {
@@ -20,9 +23,10 @@ header {
 }
 
 header > h1 {
-    font-size: 8vi;
+    font-size: 10vi;
     padding-top: 50px;
-    font-family: var(--fonte-poema);
+    font-family: var(--fonte-titulo);
+    font-variant: small-caps;
 }
 
 header > p {
@@ -66,7 +70,7 @@ main > .caixa_imagem {
     background-size: cover;
     padding: 10vh 30px;
     color: white;
-    box-shadow: inset 0px 1px 10px 0px black;
+    box-shadow: inset 6px 6px 15px 8px rgba(0, 0, 0, 0.479);
 }
 
 main article {
@@ -78,11 +82,13 @@ main article {
 
 main #imagem_joaninha {
     background-image: url(imagens/background001.jpg);
+    background-color: #D58300;
 }
 
 main #imagem_texto {
     background-image: url(imagens/background002.jpg);
     background-position: center left;
+    background-color: #C5CFB5;
 }
 
 footer {
