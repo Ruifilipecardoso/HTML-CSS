@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-icon.ico" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="idist">Distrito: </label>
+            <select name="distrito" id="idist">
+                <optgroup label="Norte">
+                    <option value="BR">Braga</option>
+                    <option value="PT" selected>Porto</option>
+                    <option value="VC">Viana Do Castelo</option>
+                </optgroup>
+                
+                <optgroup label="Centro">
+                    <option value="AV">Aveiro</option>
+                    <option value="CB">Castelo Branco</option>
+                    <option value="CO">Coimbra</option>
+                </optgroup>
+
+                <optgroup label="Alentejo">
+                    <option value="BJ">Beja</option>
+                    <option value="EV">Évora</option>
+                    <option value="PA">Portalegre</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrdor</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
