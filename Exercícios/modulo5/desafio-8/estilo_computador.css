@@ -5,16 +5,17 @@
         text-align: left;
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-between;
     }
 
     h1 {
-        flex: 1 0 200px;
+        flex: 0 0 200px;
         /*border: 2px solid black;*/
     }
 
     #menu {
         /*border: 2px solid black;*/
-        flex: 0 0 574px;
+        flex: 0 0 575px;
         align-self: flex-end;
         display: flex;
         flex-flow: row nowrap;
@@ -25,7 +26,6 @@
         margin: 3px;
         padding: 10px;
         flex: 0 0 90px;
-        align-self: flex-start;
     }
 
     #extra {
