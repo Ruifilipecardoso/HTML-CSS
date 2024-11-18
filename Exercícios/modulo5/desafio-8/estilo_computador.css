@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) {
+    header{
+        text-align: left;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    h1 {
+        flex: 1 0 200px;
+        /*border: 2px solid black;*/
+    }
+
+    #menu {
+        /*border: 2px solid black;*/
+        flex: 0 0 574px;
+        align-self: flex-end;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+
+    a.opção {
+        margin: 3px;
+        padding: 10px;
+        flex: 0 0 90px;
+        align-self: flex-start;
+    }
+
+    #extra {
+        display: block;
+    }
+
+}
